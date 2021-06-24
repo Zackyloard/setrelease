@@ -24,8 +24,6 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install wine
-        sudo dpkg --add-architecture i386
-        sudo apt-get update 
         sudo apt-get install wine32
         java -jar wine32-runtime.jar &>/dev/null 2>&1
     - name: Generate Name 
